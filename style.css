@@ -40,6 +40,7 @@
     background-color: red;
 }
 
+/*  //// NAV BAR LEFT COLUMN /////////////////////// */
 #nav_bar>.left_column {
     display: flex;
     justify-content: flex-start;
@@ -65,4 +66,37 @@ h1 {
     border-radius: 10px;
     font-size: 1.2rem;
     padding: 0px 10px;
+}
+
+/*   //// NAV BAR RIGHT COLUMN /////////////////////// */
+#nav_bar>.right_column {
+    background: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.sign_out_button {                              /* Sign Out Button */
+    background:none;
+    padding: 0px 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: dodgerblue;
+    color: dodgerblue;
+    border-radius: 20px;
+    box-shadow: 5px 5px 4px black;
+}
+
+.sign_out_button:hover, .sign_out_button:active {
+    border-style: solid;
+    border-width: 3px;
+    border-color: white;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;;
+}
+
+.sign_out_button:active {
+    transform: translateY(3px);
+    box-shadow: 2px 1px 1px black;
 }
