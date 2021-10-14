@@ -128,7 +128,6 @@ h1 {
     border-width: 2px;
     border-radius: 10px;
     width: inherit;
-    height: 400px;
     display: flex;
     flex-direction: column;
 }
@@ -138,10 +137,59 @@ h1 {
 }
 
 .user_card>.header>.user_image {
-    height: 90px;
+    height: 100px;
+    position: relative;
+    left: 10px;
+    top: 60px;
+    border-radius: 50%;
+    border: solid;
+    border-width: 2px;
+    border-color: white;
+    box-shadow: 4px 4px 3px darkblue;
 }
 
 .user_card>.content {
     display: flex;
     flex-direction: column;
+    padding-top: 60px;
+}
+
+.content_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+.content_container>* {
+    margin: 0px 10px;
+}
+
+.user_name {
+    font-size: 30px;
+}
+
+.icon {
+    height: 15px;
+}
+
+.general_content_card {
+    background-color: white;
+    border-style: solid;
+    border-color: navy;
+    border-width: 2px;
+    border-radius: 10px;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.general_content_card>.header {
+    background: rgb(2,2,5);
+    background: linear-gradient(0deg, rgba(2,2,5,1) 0%, rgba(42,36,74,1) 66%, rgba(13,13,14,1) 100%);
+    color: white;
+    padding: 10px;
+    font-size: 20px;
 }
