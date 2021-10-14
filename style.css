@@ -24,6 +24,7 @@
     color: white;
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 .gutter {
@@ -32,7 +33,7 @@
 
 .left_column {
     flex: 6;
-    /* background-color: blue; */
+    background-color: blue;
 }
 
 .right_column {
@@ -45,6 +46,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    background: none;
 }
 
 .nav_bar_a {
@@ -99,4 +101,10 @@ h1 {
 .sign_out_button:active {
     transform: translateY(3px);
     box-shadow: 2px 1px 1px black;
+}
+
+#main_content {
+    height: 800px;
+    background-color: green;
+    display: flex;
 }
