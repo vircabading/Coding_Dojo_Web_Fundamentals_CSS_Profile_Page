@@ -125,6 +125,10 @@ h3 {
     margin: 10;
 }
 
+.scroll_magic {
+    overflow: auto;
+}
+
 /*  //// NAV BAR ////////////////////////////////////// */
 
 /*  //// NAV BAR LEFT COLUMN /////////////////////// */
