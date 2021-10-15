@@ -18,18 +18,63 @@
     margin: 0;
 }
 
-/*  //// NAV BAR ////////////////////////////////////// */
+/*  //// GENERAL CLASSES ////////////////////////////// */
 
-#nav_bar {
-    background: rgb(2,2,5);
-    background: linear-gradient(0deg, rgba(2,2,5,1) 0%, rgba(42,36,74,1) 66%, rgba(13,13,14,1) 100%);
-    color: white;
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+.date {
+    font-size: 1.3rem;
+}
+
+.container {
     display: flex;
+}
+
+.flex_right {
+    flex-direction: row;
+}
+
+.flex_down {
+    flex-direction: column;
+}
+
+.align_center {
     align-items: center;
-    width: 100%;
-    height: 70px;
-    position: fixed;
-    top: 0px;
+}
+
+.align_up {
+    align-items: flex-start;
+}
+
+.justify_left {
+    justify-content:flex-start;
+}
+
+.justify_right {
+    justify-content: flex-end;
+}
+
+.justify_space {
+    justify-content: space-around;
+}
+
+.justify_center {
+    justify-content: center;
+}
+
+.width_inherit {
+    width: inherit;
 }
 
 .gutter {
@@ -37,32 +82,56 @@
 }
 
 .left_column {
-    flex: 6;
-    /* background-color:yellow ; */
+    flex: 8 ;
 }
 
 .right_column {
     flex: 4;
-    background-color: red;
 }
+
+.bg_blue_steel {
+    background: rgb(2,2,5);
+    background: linear-gradient(0deg, rgba(2,2,5,1) 0%, rgba(42,36,74,1) 66%, rgba(13,13,14,1) 100%);
+}
+
+.bg_dodger {
+    background-color: dodgerblue;
+}
+
+.ft_white {
+    color: white;
+}
+
+.ft_dodger {
+    color: dodgerblue;
+}
+
+.bd_dodger {
+    border-color: dodgerblue;
+}
+
+.bd_navy {
+    border-style: solid;
+    border-color: navy;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.pad_10 {
+    padding: 10;
+}
+
+.margin_10 {
+    margin: 10;
+}
+
+/*  //// NAV BAR ////////////////////////////////////// */
 
 /*  //// NAV BAR LEFT COLUMN /////////////////////// */
-#nav_bar>.left_column {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    background: none;
-}
 
 .nav_bar_a {
-    color: dodgerblue;
     text-decoration: none;
     margin: 0px 20px;
-}
-
-h1 {
-    font-size: 50px;
-    font-weight: bold;
 }
 
 .nav_bar_a:hover, .nav_bar_a:active {
@@ -88,8 +157,6 @@ h1 {
     padding: 0px 20px;
     border-style: solid;
     border-width: 2px;
-    border-color: dodgerblue;
-    color: dodgerblue;
     border-radius: 20px;
     box-shadow: 5px 5px 4px black;
 }
@@ -108,21 +175,14 @@ h1 {
     box-shadow: 2px 1px 1px black;
 }
 
-/*  //// NAV BAR ////////////////////////////////////// */
 /*  //// MAIN CONTENT ///////////////////////////////// */
-#main_content {
-    height: 800px;
-    background-color: lightgray;
-    display: flex;
-    padding-top: 90px;
-}
 
+/*  ////////// Main Content LEFT COLUMN /////////////// */
 #main_content>.left_column {
-    padding-right: 10px;
+    padding: 10px 10px 10px 0px;
 }
 
 .user_card {
-    background-color: white;
     border-style: solid;
     border-color: dodgerblue;
     border-width: 2px;
@@ -130,10 +190,6 @@ h1 {
     width: inherit;
     display: flex;
     flex-direction: column;
-}
-
-.user_card>.header {
-    background-color: dodgerblue;
 }
 
 .user_card>.header>.user_image {
@@ -149,14 +205,10 @@ h1 {
 }
 
 .user_card>.content {
-    display: flex;
-    flex-direction: column;
     padding-top: 60px;
 }
 
 .content_container {
-    display: flex;
-    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     padding: 10px;
@@ -174,12 +226,12 @@ h1 {
     height: 15px;
 }
 
+.connection_img {
+    height: 30px;
+    border-radius: 50%;
+}
+
 .general_content_card {
-    background-color: white;
-    border-style: solid;
-    border-color: navy;
-    border-width: 2px;
-    border-radius: 10px;
     width: inherit;
     display: flex;
     flex-direction: column;
@@ -187,9 +239,14 @@ h1 {
 }
 
 .general_content_card>.header {
-    background: rgb(2,2,5);
-    background: linear-gradient(0deg, rgba(2,2,5,1) 0%, rgba(42,36,74,1) 66%, rgba(13,13,14,1) 100%);
     color: white;
     padding: 10px;
     font-size: 20px;
+}
+
+/*  //////// Main Content RIGHT COLUMN ////////////// */
+.connection_icon {
+    border-radius: 50%;
+    /* font-weight: bold; */
+    padding: 0px 7px;
 }
