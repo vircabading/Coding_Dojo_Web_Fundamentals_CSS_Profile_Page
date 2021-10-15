@@ -114,7 +114,8 @@ h3 {
     border-style: solid;
     border-color: navy;
     border-width: 2px;
-    /* border-radius: 10px; */
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 .pad_10 {
@@ -190,7 +191,8 @@ h3 {
     border-style: solid;
     border-color: dodgerblue;
     border-width: 2px;
-    /* border-radius: 10px; */
+    border-radius: 10px;
+    overflow: hidden;
     width: inherit;
     display: flex;
     flex-direction: column;
